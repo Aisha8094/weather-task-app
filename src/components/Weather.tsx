@@ -16,7 +16,7 @@ export default function Weather() {
   const [error, setError] = useState<string>('');
   const [recentCities, setRecentCities] = useState<string[]>([]);
 
-  const API_KEY = 'REMOVED_SECRET'; 
+  const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 
   const fetchWeather = async (searchCity?: string) => {
     const targetCity = searchCity || city;
