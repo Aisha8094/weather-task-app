@@ -1,16 +1,51 @@
-# React + Vite
+# Weather & Task Planner
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive React and TypeScript web application built with Vite and Tailwind CSS that combines live weather lookup with a daily task planner.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **Live Weather Lookup:** Search cities to view current weather information powered by the OpenWeather API.
+- **Task Planner:** Add and organize daily tasks alongside weather planning in a clean, responsive layout.
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Frontend:** React, TypeScript, Tailwind CSS
+- **Build Tool:** Vite
+- **API:** OpenWeather API
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Clone the Repository
+
+```bash
+git clone [https://github.com/Aisha8094/weather-task-app.git](https://github.com/Aisha8094/weather-task-app.git)
+cd weather-task-app
+```
+
+### 2. Install Dependencies
+
+```bash
+npm install
+```
+
+### 3. Configure Environment Variables
+
+Create a `.env` file in the project root based on `.env.example`:
+
+```env
+VITE_OPENWEATHER_API_KEY=your_openweather_api_key_here
+```
+
+> **Note:** Never commit your `.env` file or expose your API key in source code or Git history.
+
+### 4. Run the Development Server
+
+```bash
+npm run dev
+```
+
+## Available Scripts
+
+- `npm run dev` — Start the Vite development server
+- `npm run build` — Build the application for production
+- `npm run preview` — Preview the production build locally
